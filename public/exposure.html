@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>漳州市交警AI+交通管理曝光台</title>
+    <link rel="stylesheet" href="./exposure/layui/layui.css">
+    <link href="https://cdn.bootcss.com/limonte-sweetalert2/7.21.0/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./exposure/layui/css/layui.css">
+    <link rel="stylesheet" href="./exposure/exposure.css">
+</head>
+<body>
+    <header>
+        <h1>漳州市交警AI+交通管理曝光台</h1>
+    </header>
+    <main>
+        <div class="wrap">
+            <div class="mainSearch">
+                <form action="" id="searchForm">
+                    <span>
+                        <i>*</i>
+                        <label for="name"> 姓名</label>
+                        <input type="text" id="name" name="name">
+                    </span>
+                    <span>
+                        <i>*</i>
+                        <label for="cardId"> 身份证号：</label>
+                        <input type="text" id="cardId" name="cardId">
+                    </span>
+                    
+                    <span>
+                        <i>*</i>
+                        处罚类型：
+                        <select name="punishment" id="punishment">
+                            <option value="1">机动车违规行驶</option>
+                            <option value="2">机动车违规行驶</option>
+                            <option value="3">机动车违规行驶</option>
+                            <option value="4">机动车违规行驶</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="singleNumber"> 处罚单号：</label>
+                        <input type="text" id="singleNumber" name="singleNumber">
+                    </span>
+                </form>
+                <button class="btn">查询</button>
+            </div>
+            <div id="content">
+                <!-- <div class="items">
+                    <span class="imgBox">
+                        <img src="./group_test1.jpg" alt="">
+                    </span>
+                    <hr>
+                    <div class="itemContentBox">
+                        <p>
+                            <span>姓名</span>
+                            <span id="name">龙**</span>
+                        </p>
+                        <p>
+                            <span>身份证号</span>
+                            <span id="cardId">12312312312315421</span>
+                        </p>
+                        <p>
+                            <span>违法时间</span>
+                            <span id="">2018-11-12</span>
+                        </p>
+                        <p>
+                            <span>违法地点</span>
+                            <span>漳州市龙发区</span>
+                        </p>
+                    </div>
+                </div>                  -->
+            </div>
+        </div>
+        <div id="layerPages">
+        </div>
+    </main>
+    <footer>
+        <div class="wrap">
+            <span class="prompt">友情链接</span>      
+            <a href="#">漳州市政府官网</a>
+            <a href="#">漳州市交警中队</a>
+        </div>
+    </footer>
+    <div id="maskLayer"></div>
+    <div id="layerpop">
+        <span class="closeIcon"></span>
+        <div class="layerpopContent">
+            <div class="layerpopContentLeft">
+                <img src="" alt="">
+            </div>
+            <div class="layerpopContentRight">
+                <div class="layerpopContentRightImgbox">
+                    <span class="positive">
+                        <img src="" alt="">
+                    </span>
+                    <span class="negetive">
+                        <img src="" alt="">
+                    </span> 
+                </div> 
+                <p>详细信息</p>
+                <div class="layerpopContentRightContens">
+                    <p>
+                        <span>姓名：</span>
+                        <span class="personName"></span>
+                    </p>
+                    <p>
+                        <span>身份证号：</span>
+                        <span class="personCardId"></span>
+                    </p>
+                    <p>
+                        <span>违法时间：</span>
+                        <span class="illegalTime">2018-8-7</span>
+                    </p>
+                    <p>
+                        <span>违法地点：</span>
+                        <span class="illegalPlace">福田区</span>
+                    </p>
+                    <p>
+                        <span>违法次数：</span>
+                        <span class="illegalNumber">14</span>
+                    </p>
+                    <p>
+                        <span>处罚内容：</span>
+                        <span class="fine">罚款500元</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.bootcss.com/limonte-sweetalert2/7.21.1/sweetalert2.min.js"></script>
+<script src="./exposure/layui/layui.js"></script>
+<script src="./exposure/jquery.min.js"></script>
+<script type="text/javascript" src="./exposure/exposure.js"></script>
+</body>
+</html>

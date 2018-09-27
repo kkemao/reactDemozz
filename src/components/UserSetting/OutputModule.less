@@ -1,0 +1,423 @@
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    z-index: 10;
+}
+//**&************设置**************//
+.ant-cascader-picker {
+    border: 1px solid #00EAFF; 
+  }
+.setting{
+    z-index: 1001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+}
+.btn-normal{
+    text-align: center;
+    background: rgba(0, 234, 255, 0.2);
+    color:#fff;
+}
+.btn{
+    border: 1px solid #00EAFF;
+    color: #00EAFF;
+    background: black;
+}
+// 添加人员
+//人员管理
+.add-account,
+.person-manage,
+  {
+    width: 37.5%;
+    height: 50%;
+    background: url('../../asset/pops/alerm3.png') no-repeat center center;
+    background-size: contain;
+    .setting-title{
+        height: 24px;
+        line-height: 40px;
+        margin-top: 35px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 20px;
+        background: url('../../asset/pops/title.png') no-repeat center center;
+    }
+    .setting-input{
+        background: transparent;
+        border: 1px solid #00EAFF;
+        border-radius: 4px;
+        background-color: transparent !important;
+        background-image: none !important;
+        color: #FFFFFF !important;
+    }
+}
+
+//操作记录
+.operation-record,
+.punish-setting{
+    width: 70.5%;
+    height: 62%;
+    background: url('../../asset/pops/pop@3x.png') no-repeat center center;
+    background-size: contain;
+    .setting-title{
+        height: 24px;
+        line-height: 40px;
+        margin-top: 35px;
+        margin-bottom: 58px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 20px;
+        background: url('../../asset/pops/title.png') no-repeat center center;
+    }
+    .filter-wrapper{
+        text-align: left;
+        padding: 10px 56px 10px 56px;
+        .filter-item{
+            color: #BFBFBF;
+            padding-right: 14px;
+            .export-box .timeSeletcBox .borders span{
+                background-color: black;
+            }
+        }
+        .time-choses{
+            padding-left: 20px;
+        }
+        .account{
+            width: 300px;
+            height: 32px;
+        }
+        .seearch-btn{
+            margin-left: 20px;
+        }
+    }
+}
+//相似度
+//视频存储时间
+.similarity-setting,
+.video-savetime{
+    width: 37.5%;
+    height: 33%;
+    background: url('../../asset/pops/pop@1x.png') no-repeat center center;
+    background-size: contain;
+    .setting-title{
+        height: 24px;
+        line-height: 40px;
+        margin-top: 35px;
+        margin-bottom: 58px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 20px;
+        background: url('../../asset/pops/title.png') no-repeat center center;
+    }
+    .similarity-wrapper{
+        text-align: center;
+        .percent{
+            display: inline-block;
+            height: 36px;
+            margin-left: -20px;
+            line-height: 36px;
+            font-size: 20px;
+        }
+    }
+}
+
+//处罚相关设置  style={{marginRight:'20px'}}
+.punish-setting{
+    .number-situation{
+        border: none;
+        color: #00EAFF ;
+        background: black;
+        font-size: 22px;
+    }
+    input,textarea{
+        color: #FFFFFF ;
+    }
+    .ant-input{
+        border: none;
+        border-radius: 0;
+    }
+    .btn-wrapper{
+        margin-top: 130px;
+        text-align: center;
+        .preview-ticket{
+            margin-top: 40px;
+        }
+        .important-info-btn{
+            margin-top: 40px;
+        }
+        .save-change-btn{
+            margin-top: 40px;
+        }
+    }
+    .preview-ticket{
+        width: 100%;
+        height: 490px;
+        background: rgba(0,234,255,0.05);
+
+    }
+}
+
+//**&************设置**************//
+
+
+
+
+//人像对比模块
+.setting-box .comparefaces{
+    z-index: 1001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 37.5%;
+    height: 33%;
+    background: url('../../asset/icon/dataExport/smallAlterm.png');
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    .header {
+        color: #FFFFFF;
+        font-family: PingFangSC-Medium;
+        font-size: 20px;
+        margin-top: 35px;
+        background: url('../../asset/icon/dataExport/title.png') no-repeat center center;
+        height: 24px;
+        line-height: 40px;
+    } 
+    .account-title{
+        font-size: 20px;
+        margin: 36px auto 40px;
+        text-align: center;
+        color: #fff;
+        max-width: 565px;
+        background-image: url('../../asset/pops/title.png');
+        background-size: cover;
+    }
+    .account-input{
+        background: transparent;
+        border: 1px solid #00EAFF;
+        border-radius: 4px;
+        background-color: transparent !important;
+        background-image: none !important;
+        color: #FFFFFF !important;
+    }
+    .clearfix {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        min-height: 100px;
+        box-sizing: border-box;
+        .contentLeft {
+            margin-right: 100px;
+            box-sizing: border-box;
+        }
+        
+        .ant-upload.ant-upload-select-picture-card {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            border: 2px dashed #00EAFF;
+            background: rgba(0,234,255,0.05);
+            margin-right: 0px; 
+            margin-bottom: 0px; 
+            .ant-upload {
+                color: #00EAFF;
+                width: 100px;
+                height: 100px;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                line-height: 30px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    p {
+        margin-top: 20px;
+        height: 30px;
+        span{
+            display: inline-block;
+            line-height: 30px;
+            background-color: rgba(0,234,255,0.05);
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+    }
+    .footerBtn {
+        margin-top: 10px;
+        button {
+            width: 88px;
+            height: 32px;
+            border: 1px solid rgba(0, 234, 255, 0.4);
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        .cancel {
+            background: rgb(10, 9, 25);
+        }
+        .sure {
+            background:rgba(0, 234, 255, 0.4);
+            margin-left: 20px;
+        }
+    }
+}
+//修改账户模块
+.changepass{
+    z-index: 1001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 37.5%;
+    height: 49.4%;
+    background: url('../../asset/icon/dataExport/alerm.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    .header {
+        color: #FFFFFF;
+        font-family: PingFangSC-Medium;
+        font-size: 20px;
+        margin-top: 35px;
+        background: url('../../asset/icon/dataExport/title.png') center center  no-repeat;
+        height: 24px;
+        line-height: 40px;
+    }
+    .peopleData {
+        margin-top: 95px;
+        p{
+            margin-bottom: 40px;
+            font-size: 16px;
+            color: #BFBFBF;
+            span{
+                display: inline-block;
+                width: 50%;
+            }
+            .DataName {
+                text-align: right;
+                i {
+                    color: red;
+                }
+            }
+            .Datas {
+                text-align: left;
+                padding-left: 10px;
+                color: #FFFFFF;
+                input {
+                    background-color: rgba(0, 234, 255, 0.4);
+                    outline: none;
+                    border: 1px solid rgba(0, 234, 255, 0.4);
+                    border-radius: 5px;
+                    padding: 2px 6px;
+                }
+            }
+        }
+        .prompt {
+            color: rgba(0, 234, 255, 0.4);
+            margin-bottom: 10px;
+        }
+        .iptBox {
+            margin-bottom: 20px;
+            input[type="text"] {
+                background-color: rgba(0, 234, 255, 0.4);
+                outline: none;
+                border: 1px solid rgba(0, 234, 255, 0.4);
+                border-radius: 5px;
+                padding: 2px 6px;
+            }
+        }
+        .verification {
+            margin-top: 10px;
+            span {
+                width: 88px;
+                height: 32px;
+                line-height: 30px;
+                color: #fff;
+                background-color: rgba(0, 234, 255, 0.4);
+                border: 1px solid rgba(0, 234, 255, 0.4);
+                margin-right: 0;
+            }
+        }
+        .peopleDataBtn {
+            margin-top: 70px;
+            span {
+                width: 88px;
+                height: 32px;
+                line-height: 30px;
+                color: #fff;
+                background-color: rgba(0, 234, 255, 0.4);
+                border: 1px solid rgba(0, 234, 255, 0.4);
+                margin-right: 0;
+            }
+        }
+        div {
+            button {
+                width: 88px;
+                height: 32px;
+                border: 1px solid rgba(0, 234, 255, 0.4);
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .cancel {
+                background: rgb(10, 9, 25);
+            }
+            .sure {
+                background:rgba(0, 234, 255, 0.4);
+                margin-left: 20px;
+            }
+        }
+        .ant-form-item-label {
+            width: 50%;
+        }
+    }
+}
+
+// 用户设置模块
+// 切换用户
+.replacement {
+    z-index: 1001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 37.5%;
+    height: 49.4%;
+    background: url('../../asset/icon/dataExport/alerm.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    .header {
+        color: #FFFFFF;
+        font-family: PingFangSC-Medium;
+        font-size: 20px;
+        margin-top: 35px;
+        background: url('../../asset/icon/dataExport/title.png') center center  no-repeat;
+        height: 24px;
+        line-height: 40px;
+    }
+}
+
+

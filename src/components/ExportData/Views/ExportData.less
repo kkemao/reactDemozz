@@ -1,0 +1,214 @@
+.export-bg{
+    position: absolute;
+    top: 0;
+    left: 16.4%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.1;
+    z-index: 10;
+}
+
+.export-box{
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 37.5%;
+    height: 49.4%;
+    background-image: url('../../../asset/icon/dataExport/alerm.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    
+    .dataTitle {
+        font-size: 20px;
+        margin: 36px auto 40px;
+        color: #fff;
+        max-width: 565px;
+        background-image: url('../../../asset/icon/dataExport/title.png');
+        background-size: cover;
+    }
+    .timeSeletcBox {
+        .timeMargin {
+            display: inline-block;
+            margin: 15px 0;
+        }
+        .promptMessage {
+            color:rgba(0, 234, 255,.8);
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .borders {
+            border: 1px solid #00EAFF ;
+            border-radius: 4px;
+            background-color: #0A0919;
+            outline: none;
+            span {
+                background-color: #0A0919;
+                border: none;
+                span {
+                    color: #fff;
+                }
+                span::after {
+                    color: #fff;
+                }
+            }
+            input {
+                background-color: #0A0919;
+                color: #fff;
+            }
+        }
+        .btnBox {
+            height: 45px;
+        }
+    }
+    .dataSelectItem {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        label{
+            display: inline-block;
+            margin: 15px 0;
+            text-align: left;
+            span:last-child{
+                color: #BFBFBF;
+                margin-left: 14px;
+            }
+            input[type=checkbox] {
+                position: relative;
+                width: 10px;
+                height: 0px;
+            }
+            input[type=checkbox]::after{
+                content:'';
+                position: absolute;
+                top: -14px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                line-height:16px;
+                text-align: center;
+                padding: 2px;
+                color:#fff;
+                font-size:16px;
+                background-color:#0A0919;
+                border-radius: 50%;
+                border: 1px solid rgb(6, 99, 117);
+            }
+            input[type=checkbox]:checked::before {
+                z-index: 6;
+                color:#fff;
+                background-color:#fff;
+                content: ' ';
+                position: absolute;
+                top: -10px;
+                left: 4px;
+                width: 8px;
+                height: 8px;
+                line-height:8px;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+    }
+    .btnSelectColor {
+        background: rgba(0, 234, 255, 0.4);
+        border-radius: 4px;
+        text-align: center;
+        margin: 15px 4px;
+        cursor: pointer;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+    .btnDefaultColor {
+        background-color:  rgba(191,191,191,0.40);
+        color: #fff;
+        border: none;
+        outline: none;
+        margin: 15px 4px;
+    }
+    .formFoorter{
+        .ant-btn[disabled] {
+            border: none;
+        }
+        .footerBtn {
+            margin-right: 8px;
+            span:last-child {
+                color: #fff;
+            }
+            .ant-checkbox-inner {
+                color:rgb(6, 99, 117);
+                background-color:#0A0919;
+                border: 1px solid rgb(6, 99, 117);
+            }
+        }
+    }
+}
+.ant-calendar {
+    // border: 1px solid #00EAFF;
+    .ant-calendar-input-wrap {
+        background-color: #0A0919;
+        border-bottom:1px solid #00EAFF;
+        .ant-calendar-date-input-wrap {
+            width: 100%;
+            margin-left: 0;
+        }
+        .ant-calendar-input { 
+            background-color: #0A0919;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .ant-calendar-range-middle {
+        color: #fff;
+        margin-left: 0;
+        z-index: 5;
+        left: calc(50% - 10px)
+    }
+    .ant-calendar-range-part {
+        .ant-calendar-header {
+            background-color: #0A0919;
+            border-bottom: 1px solid #00EAFF;
+            a {
+                color: #fff;
+            }
+        }
+        .ant-calendar-month-panel-header,
+        .ant-calendar-month-panel-body,
+        .ant-calendar-decade-panel-body,
+        .ant-calendar-year-panel {
+            background-color: #0A0919;
+        }
+        .ant-calendar-month-panel-month {
+            background: none;
+            color: rgb(6, 99, 117);
+        }
+        .ant-calendar-decade-panel-century {
+            background-color: #0A0919;
+            color: rgba(191, 191, 191, 0.8);
+        }
+        .ant-calendar-decade-panel-decade:hover,
+        .ant-calendar-year-panel-year:hover {
+            color: rgb(6, 99, 117);
+            background: rgba(191, 191, 191, 0.8);
+        }
+        .ant-calendar-body {
+            background-color: #0A0919;
+            border-top: none;
+            th {
+                color: #fff;
+            }
+            .ant-calendar-date {
+                // color: rgba(191, 191, 191, 0.8);
+            }
+        }
+    }
+}

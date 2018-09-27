@@ -1,0 +1,28 @@
+[
+	{
+		"id": 1,
+		"name": "白展堂",
+        "carId": "粤C5421",
+        "imageUrl":"./mockData/zhuapai/carNow.jpg",
+		"time": 1532765119000,
+		"location": "科技园路",
+		"processImgs":[
+			"./mockData/zhuapai/process1.jpg",
+			"./mockData/zhuapai/process2.jpg",
+			"./mockData/zhuapai/process3.jpg"
+		]
+	},
+	{
+		"id": 2,
+		"name": "张三",
+        "carId": "粤A5421",
+        "imageUrl":"./mockData/zhuapai/carUnchecked001.jpg",
+		"time": 1532764980000,
+		"location": "西前进二路",
+		"processImgs":[
+			"./mockData/zhuapai/process4.jpg",
+			"./mockData/zhuapai/process5.jpg",
+			"./mockData/zhuapai/process6.jpg"
+		]
+	}
+]

@@ -1,0 +1,514 @@
+/* scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background: #f3f3f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #f3f3f3;
+}
+
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.dn {
+  display: none;
+}
+
+.loginWrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.mapWrap{
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.map-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(19, 24, 30)!important;
+}
+
+.map-tool-box {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border-radius: 3px;
+  z-index: 1;
+  z-index: 1;
+  background: #00EAFF;
+  opacity: 0.5;
+}
+
+.map-control {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444;
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 0px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.map-control.active {
+  color: rgb(42, 127, 255);
+  /* background: white; */
+}
+
+/* .map-control:hover {
+  background: rgba(0, 0, 0, 0.03);
+} */
+
+.map-control-icon:before {
+  content: '';
+  width: 19px;
+  height: 19px;
+  float: left;
+  margin-right: 5px;
+  transition: all 0.2s ease;
+}
+
+.relitu:before {
+  background-image: url(../../../asset/icon/map/relitu.png);
+}
+.relitu.active:before {
+  background-image: url(../../../asset/icon/map/relitu_active.png);
+}
+
+.yidong:before {
+  background-image: url(../../../asset/icon/map/yidong.png);
+}
+.yidong.active:before {
+  background-image: url(../../../asset/icon/map/yidong_active.png);
+}
+
+.kuangxuan:before {
+  background-image: url(../../../asset/icon/map/kuangxuan.png);
+}
+.kuangxuan.active:before {
+  background-image: url(../../../asset/icon/map/kuangxuan_active.png);
+}
+
+.jianxuan:before {
+  background-image: url(../../../asset/icon/map/jianxuan.png);
+}
+.jianxuan.active:before {
+  background-image: url(../../../asset/icon/map/jianxuan_active.png);
+}
+
+.camera-container-inmap {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  /* background-color: rgb(238, 93, 91);
+  border: 1px solid rgb(188, 59, 58); */
+  color: white;
+  line-height: 18px;
+  white-space: nowrap;
+  font-size: 12px;
+  user-select: none;
+  text-align: center;
+}
+
+.camerabg-inmap {
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  background-image: url(../../../asset/icon/camera_new.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.camerabg-inmap.selected {
+  /* background-size: 110% 110%; */
+  background-image: url(../../../asset/icon/camera_select.png);
+  background-color: transparent;
+}
+
+.cameratext-inmap {
+  width: 54px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: -5px;
+  left: -6px;
+  color: black;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 3px;
+}
+
+.camera-list-box {
+  width: 280px;
+  height: 192px;
+  z-index: 1;
+  padding: 0px 0px 0px 0px;
+  /* background: rgb(255, 255, 255); */
+  position: absolute;
+  /* border: 1px solid rgba(128, 128, 128, 0.27); */
+  border-radius: 3px;
+  user-select: none;
+  background: rgba(255,175,0,0.10);
+  border: 1px dashed rgba(255,175,0,0.10)
+  /* overflow: hidden; */
+}
+
+.camera-box-title {
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #e3e3e3;
+  color: #f7b722;
+}
+
+.listbox-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 36px;
+  height: 36px;
+  background-image: url(../../../asset/icon/close.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.listbox-ul {
+  display: inline-block;
+  width: 100%;
+  height: calc(100% - 36px);
+  height: -webkit-calc(100% - 36px);
+  overflow: auto;
+}
+
+.listbox-li {
+  float: left;
+  width: 100%;
+}
+
+.listbox-h5 {
+  height: 36px;
+  line-height: 36px;
+  margin: auto;
+  width: 90%;
+}
+
+.listbox-camerabg {
+  width: 36px;
+  height: 36px;
+  float: left;
+  background-image: url(../../../asset/icon/camera_new.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  clear: both;
+}
+
+.listbox-cameraname {
+  float: left;
+  color: #ffb200;
+  width: calc(100% - 72px);
+  width: -webkit-calc(100% - 72px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  cursor: pointer;
+}
+.listbox-cameraname:hover {
+  color: #00eaff;
+}
+
+.listbox-cameracount {
+  float: right;
+  width: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  cursor: pointer;
+  color: blue;
+  text-align: right;
+  font-size: 12px;
+}
+
+.listbox-sjx {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: -7px;
+  left: calc(50% - 6px);
+  left: -webkit-calc(50% - 6px);
+  background: white;
+  border-left: 1px solid rgba(128, 128, 128, 0.27);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.27);
+  transform: rotate(-44deg);
+  -webkit-transform: rotate(-44deg);
+}
+
+.camera-box {
+  position: absolute;
+  top: 80px;
+  left: 74px;
+  z-index: 1;
+  /* background: white; */
+  background: rgba(255,175,0,0.10);
+  border: 1px dashed rgba(255,175,0,0.10);
+  padding: 5px;
+  height: 50%;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 20px rgba(255,175,0,0.10);
+}
+
+.leftIn-on {
+  animation: leftIn 0.5s cubic-bezier(0, 1.16, 0.75, 1);
+  -webkit-animation: leftIn 0.5s cubic-bezier(0, 1.16, 0.75, 1);
+}
+.leftIn-off {
+  animation: leftIn 0.5s cubic-bezier(0, 1.16, 0.75, 1);
+  -webkit-animation: leftIn 0.5s cubic-bezier(0, 1.16, 0.75, 1);
+  animation-direction: reverse;
+  -webkit-animation-direction: reverse;
+}
+
+.camera-box-ul {
+  width: 100%;
+  height: calc(100% - 72px);
+  height: -webkit-calc(100% - 72px);
+  overflow: auto;
+}
+
+.camera-box-h5 {
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+  color: #eaa80f;
+}
+.active-h5{
+    /* color: rgb(42, 127, 255); */
+    color: rgb(8, 216, 239);
+}
+
+.camera-box-h5:hover .camera-box-name {
+  /* color: rgb(42, 127, 255); */
+  color: #00eaff;
+}
+.camera-box-h5:hover {
+  /* background: #f7f9fa; */
+  background: #084050;
+}
+
+.camera-box-name {
+  width: calc(100% - 36px);
+  width: -webkit-calc(100% - 36px);
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  text-indent: 1em;
+}
+
+.camera-box-li-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 36px;
+  height: 36px;
+  background-image: url(../../../asset/icon/2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  transition: all 0.3 ease;
+  -webkit-transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+.camera-box-h5 .camera-box-li-close {
+  background-image: url(../../../asset/icon/2.png);
+}
+.camera-box-h5:hover .camera-box-li-close {
+  background-image: url(../../../asset/icon/1.png);
+  transform: rotate(0deg);
+}
+
+.btn-box-h5 {
+  height: 36px;
+  line-height: 36px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.span-half-btn {
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.span-half-btn:hover {
+  text-shadow: 0px -1px 0px currentColor;
+}
+.span-half-btn:first-child {
+  border-right: 1px solid #e3e3e3;
+}
+.span-half-btn.cancel {
+  color: #b9902e;
+}
+.span-half-btn.confirm {
+  color: rgb(42, 127, 255);
+}
+
+.map-time-range {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 72px;
+}
+
+.select-label {
+  margin-left: 20px;
+  display: inline-block;
+}
+.mapEvent {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  background: white;
+}
+.faceBoxInMap {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 10px;
+  background: rgb(255, 184, 89);
+  box-sizing: border-box;
+  top: -62px;
+  left: -26px;
+  z-index: 2;
+  cursor: pointer;
+}
+.faceBoxInMap.newstyle {
+  background: transparent;
+  background-image: url(../../../asset/icon/camerafb.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding: 15px 15px;
+  width: 90px;
+  height: 90px;
+  top: -56px;
+  left: -30px;
+  z-index: 11;
+}
+.faceBoxInMap.newstyle.active {
+  background-image: url(../../../asset/icon/camerafbant.png);
+}
+.faceBoxInMap.newstyle .faceBoxInMap-sjx {
+  background: transparent;
+}
+.faceBoxInMap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.faceBoxInMap.newstyle img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.faceBoxInMap-sjx {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  bottom: -8px;
+  left: calc(50% - 10px);
+  left: -webkit-calc(50% - 10px);
+  background: rgb(255, 184, 89);
+  transform: rotate(60deg) skew(30deg);
+  -webkit-transform: rotate(60deg) skew(30deg);
+  z-index: -1;
+}
+.faceBoxInMap-count {
+  display: block;
+  position: absolute;
+  max-width: 80%;
+  height: 27px;
+  line-height: 27px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  bottom: -22px;
+  text-align: center;
+  color: #2c3d55;
+  font-weight: bold;
+  font-size: 16px;
+  background: white;
+  border-radius: 3px;
+  padding: 0px 5px;
+  /* box-shadow: 0px 1px 22px rgba(93, 158, 255, 0.7); */
+  box-shadow: 0 4px 7px 0 rgba(0, 102, 255, 0.15);
+}
+.faceBoxInMap.newstyle.active .faceBoxInMap-count {
+  box-shadow: 0 4px 7px 0 rgba(255, 132, 0, 0.15);
+}
+.faceBoxInMap-count:before {
+  content: '';
+  width: 27px;
+  height: 27px;
+  float: left;
+  background-image: url(../../../asset/icon/camera.png);
+  background-repeat: no-repeat;
+}
+.faceBoxInMap.newstyle.active .faceBoxInMap-count:before {
+  background-image: url(../../../asset/icon/camera_ant.png);
+}
+
+.basescale {
+  display: block;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: unset;
+  bottom: 0px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.scaleL {
+  transform: translate(0, 0) scale(1, 1);
+  opacity: 1;
+}
+.scaleL-v {
+  transform: translate(40%, -150%) scale(0, 0);
+  opacity: 0;
+}

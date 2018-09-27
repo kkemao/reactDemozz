@@ -1,0 +1,252 @@
+.imge-type{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    .type-checked{
+        background-image: url(../../../asset/icon/btn-unchoosen.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 32px;
+        display: inline-block;
+        width: 160px;
+        text-align: center;
+        line-height: 32px;
+        margin-right: 10px;
+        transition: 0.4s;
+        font-size: 14px;
+        color: #00EAFF;
+        cursor: pointer;
+    }
+    .type-active{
+        color: #0A0919;
+        background-image: url(../../../asset/icon/btn-choosen.png);
+    }
+}
+
+.check-btn {
+    .span-to-btn {
+        background: url('../../../asset/icon/violation1.png');
+        border: none;
+        border-radius: 0;
+    }
+    .active-btn {
+        background: url('../../../asset/icon/violation2.png')
+    }
+}
+.record-items{
+    position: relative;
+    height: 690px;
+    margin-left: 5px;
+}
+.file-item-list{
+    height: 81%;
+    margin-top: 20px;
+}
+.filter-input{
+    width: 250px;
+}
+.filter-inline{
+    display: inline-block;
+    float: right;
+}
+
+.filter-radio{
+    display: inline-block;
+    span{
+        display: inline-block;
+    }
+}
+.file-filter {
+    .ant-input {
+        border: 1px solid #00EAFF;
+    }
+    .ant-calendar-range-picker-separator {
+        color: #fff;
+        vertical-align: middle;
+    }
+    .ant-calendar-picker-icon {
+        right: 20px;
+    }
+    .filter-right{
+        float: right;
+        display: inline-block;
+        font-size: 16px;
+        .btnNormal {
+            width: 60px;
+        }
+    }
+    .ant-radio-button-wrapper {
+        height: 28px;
+        line-height: 26px;
+        padding: 0 12px;
+    }
+    .ant-radio-button-wrapper:first-child{
+        border-radius: 50px 0 0 50px;
+    }
+    .borderRidio {
+        border-radius: 0 50px 50px 0;
+    }
+    .addPicBox {
+        width: 270px;
+        margin-right: 50px;
+    }
+    .ant-select-arrow {
+        right: 4px;
+        text-align: right;
+    }
+   
+    .addPic {
+        margin-left: 10px;
+        display: inline-block;
+        width: 88px;
+        height: 32px;
+        line-height: 30px;
+        color: #00EAFF;
+        text-align: center;
+        border: 1px solid #056b7c;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+.filter-color{
+    display: inline-block;
+    padding: 0 6px;
+    color: #00EAFF;
+}
+.record-item{
+    width: 469px;
+    height: 316px;
+    background-image: url(../../../asset/system/shootingRecord/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    vertical-align: middle;
+    .item-bottom{
+        height: 40%;
+        display: flex;
+        margin: 16px 0;
+        justify-content: space-between;
+        .bottom-div{
+            height: 120px;
+            display: inline-block;
+            .info-img, img{
+                width: 100%;
+                height: 110px;
+                overflow: hidden;
+            }
+        }
+        .width-200{
+            width: 208px;
+        }
+        .width-140{
+            width: 135px;
+        }
+    }
+}
+.item-top{
+    height: 55%;
+    margin-bottom: 3%;
+    position: relative;
+}
+.record-img-div{
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    .info-img{
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+        img{
+            height: 100%;
+        }
+    }
+}
+.record-img-card{
+    width: 100px;
+    height: 40px;
+    .info-img{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.record-img-group, .item-text{
+    display: inline-block;
+}
+.record-img-group{
+    height: 100%;
+    width: 110px;
+    vertical-align: middle;
+
+}
+.item-text{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 315px;
+    height: 100%;
+    height: 100%;
+    vertical-align: middle;
+    color: #bfbfbf;
+    .info-name{
+        font-size: 16px;
+        color: #00EAFF;
+        margin: 5px 0;
+    }
+    .info-type{
+        font-size: 14px;
+        color: #ff3c2f;
+        float: right;
+    }
+    .info-times{
+        font-size: 14px;
+        color: #ffaf00;
+        float: right;
+    }
+    .marginTop {
+        margin-top: 5px;
+        p{
+            font-size: 14px;
+        }
+    }
+    .btnPrint{
+        position: absolute;
+        right: -20px;
+    }
+}
+.ant-pagination  {
+    text-align: center;
+}
+.item-bottom{
+    height: 40%;
+    display: flex;
+    margin: 16px 0;
+    justify-content: space-between;
+    .bottom-div{
+       
+        height: 120px;
+        display: inline-block;
+
+        .info-img, img{
+            width: 100%;
+            height: 110px;
+            overflow: hidden;
+        }
+    }
+    .width-200{
+        width: 208px;
+    }
+    .record-pagination{
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+    }
+}

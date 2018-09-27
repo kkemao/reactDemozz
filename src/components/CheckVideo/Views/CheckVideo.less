@@ -1,0 +1,115 @@
+.check-video{
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 1300px;
+    height: 600px;
+    background: #0A0919;
+    padding: 20px;
+}
+.check-header{
+    .check-cam-name{
+        height: 40px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        
+    }
+    .check-cam-num{
+        font-size: 14px;
+        color: #BFBFBF;
+        padding: 10px 0;
+        span{
+            padding-right: 10px;
+        }
+        .cam-name{
+
+        }
+    }
+}
+.check-content{
+    overflow: hidden;
+    height: 480px;
+}
+.check-rtmp{
+    border-radius: 5px;
+    height: 480px;
+    box-sizing: border-box;
+    border: 1px solid #00EAFF;
+}
+.check-crop{
+    display: inline-block;
+    background: rgba(0,234,255,0.40);
+    border-radius: 4px;
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.check-imgs{
+    padding-left: 20px;
+    .check-imgs-head{
+        height: 30px;
+        line-height: 30px;
+    }
+    .check-imgs-content{
+        margin-top: 10px;
+        border-top: 1px solid #066a7c;
+        padding-top: 5px;
+        height: 450px;
+        overflow-y: scroll;
+    }
+}
+.check-imgs-list{
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    border: 1px solid #066a7c;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 1%;
+    img{
+        width: 100%;
+        border-radius: 4px;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+.check-del{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../asset/icon/crop-del.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.check-export{
+    background: rgba(191,191,191,0.40);
+    border-radius: 5px;
+    padding: 3px 20px;
+    display: inline-block;
+    float: right;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.check-active{
+    background: rgba(0,234,255,0.40);
+}
+
+//摄像头视频
+#cameraVideo,.video_bottom{
+    height: 100%;
+}

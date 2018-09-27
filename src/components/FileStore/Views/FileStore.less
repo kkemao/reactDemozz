@@ -1,0 +1,225 @@
+// 主体上方过滤项 start
+.file-filter{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #BFBFBF;
+    text-align: left;
+    padding-left: 18px;
+    .filter-select{
+        margin-right: 8px;
+        width: 120px;
+        color: #fff;
+    }
+    
+    .ant-select-arrow {
+        font-size: 16px;
+        width: 110px;
+    }
+    .sort-span{
+        display: inline-block;
+        float: right;
+        .sort-text{
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 10px;
+            text-align: center;
+        }
+        .sort-sp{
+            width: 1px;
+            background: #00eaff;
+            display: inline-block;
+            height: 10px;
+        }
+        .sort-act{
+            color:#00EAFF;
+        }
+    }
+
+    .ant-select-selection{
+        width:110px;
+    }
+    .ant-calendar-picker-input{
+        width:290px;
+    }
+    .ant-select-disabled .ant-select-selection{
+        background: #303947;
+        cursor: not-allowed;
+        border: 1px solid #ccc;
+        .ant-select-arrow:before{
+            color:#ccc;
+        }
+    }
+}
+// 主体上方过滤项 end
+//循环卡片item--start--
+.item-lists{
+    height: 67%;
+    position: relative;
+    //重置antD样式
+    .ant-list-item{
+        padding: 0!important;
+        border: none;
+        display: inline-block;
+    }
+}
+.file-item{
+    height: 160px;
+    width: 375px;
+    margin: 15px 0 15px 18px;
+    display: inline-flex;
+    background-image: url(../../../asset/system/fileStore/item-default.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.4s;
+    cursor: pointer;
+
+    .file-img-box{
+        display: inline-block;
+        width: 35%;
+        margin: auto;
+    }
+    .file-img{
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        img{
+            height: 100%;
+        }
+    }
+    .file-info{
+        display: inline-block;
+        width: 63%;
+        height: 100%;
+        text-align: left;
+        margin-top: 25px;
+        .info-name{
+            font-size: 16px;
+            color: #00EAFF;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+            color: #BFBFBF;
+            line-height: 25px;
+        }
+    }
+}
+.file-hover:hover{
+    background-image: url(../../../asset/system/fileStore/item-hover.png);
+}
+.file-active{
+    background-image: url(../../../asset/system/fileStore/item-choosen.png);
+    .file-info {
+        p{
+            color: #fff;
+        }
+    }
+}
+.item-arrow{
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - -5px);
+    color: #00EAFF;
+    transform: translateY(-100%);
+    cursor: pointer;
+    i{
+        font-size: 30px;
+    }
+}
+.arrow-left{
+    left: -25px;
+}
+.arrow-right{
+    right: -25px;
+}
+.item-content{
+    display: inline-block;
+    // text-align: center;
+}
+.items-pagination{
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    
+}
+//循环卡片item--end--
+//下半部分
+.file-bottom{
+    background-image: url(../../../asset/system/fileStore/file-bottom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 29%;
+}
+.bottom-content{
+    height: 100%;
+    padding: 30px 48px;
+    box-sizing: border-box;
+    .info-line {
+        color: #BFBFBF;
+    }
+    .infos-text {
+        color: #fff;
+    }
+    .inpuNormal {
+        padding: 0 12px;
+        height: 32px;
+    }
+}
+.file-check-btn{
+    height: 20%;
+    line-height: 40px;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+.info-img-div{
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+}
+.check-infos{
+    height: 150px;
+    .info-img{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        img{
+            height: 100%;
+        }
+    }
+    .info-text{
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        vertical-align: middle;
+        padding-left: 24px;
+        .info-name{
+            font-size: 20px;
+            color: #00EAFF;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .info-div{
+            height: 30px;
+            line-height: 30px;
+            margin: 5px 0;
+        }
+
+        .info-line{
+            width: 32%;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 1%;
+        }
+    }
+    .info-button{
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        width: 10%;
+    }
+}
